@@ -1,0 +1,314 @@
+.text-primary {
+    color: rgb(255, 191, 0);
+}
+
+a {
+    color: rgb(255, 191, 0);
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #ea321e;
+    text-decoration: none;
+}
+
+.btn-primary {
+    border-color: rgb(255, 191, 0);
+    background-color: rgb(255, 191, 0);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    border-color: #ea321e;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    border-color: rgb(255, 191, 0);
+    background-color: rgb(255, 191, 0);
+}
+
+.btn-primary .badge {
+    color: rgb(255, 191, 0);
+}
+
+.btn-xl {
+    border-color: rgb(255, 191, 0);
+    background-color: rgb(255, 191, 0);
+}
+
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    border-color: #ea321e;
+    background-color: #ea321e;
+}
+
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+    border-color: rgb(255, 191, 0);
+    background-color: rgb(255, 191, 0);
+}
+
+.btn-xl .badge {
+    color: rgb(255, 191, 0);
+    background-color: #fff;
+}
+
+
+.navbar-default .navbar-brand {
+    color: rgb(255, 191, 0);
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+    color: rgb(255, 191, 0);
+}
+
+.navbar-default .navbar-toggle {
+    border-color: rgb(255, 191, 0);
+    background-color: rgb(255, 191, 0);
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    outline: 0;
+    color: rgb(255, 191, 0);
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: rgb(255, 191, 0);
+}
+
+.navbar-default .navbar-nav>.active>a {
+    background-color: rgb(255, 191, 0);
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    background-color: rgb(255, 191, 0);
+}
+
+.menu-wrap a:hover,
+.menu-wrap a:focus {
+	color: rgb(255, 191, 0);
+}
+
+.menu-wrap .logo {
+    color: rgb(255, 191, 0);
+}
+
+.menu-button {
+    background: rgb(255, 191, 0);
+}
+
+.header .intro-text h1 span {
+    color: rgb(255, 191, 0);
+}
+
+.main-title strong {
+    color: rgb(255, 191, 0);
+}
+
+.feature i {
+    background: rgb(255, 191, 0);
+}
+
+.no-touch .feature:hover i,
+	.no-touch .feature:active i,
+	.no-touch .feature:focus i {
+        
+        box-shadow: 0 0 0 0 rgb(255, 191, 0);
+}
+
+.feature-2 i {
+    background: rgb(255, 191, 0);
+    border: 1px solid rgb(255, 191, 0);
+}
+
+.feature-2:hover i {
+    background: transparent;
+    color: rgb(255, 191, 0);
+}
+.feature-2:hover .border {
+    border-color: rgb(255, 191, 0);
+}
+
+.feature-3 i {
+    color: rgb(255, 191, 0);
+    border: 1px solid rgb(255, 191, 0);
+}
+
+.feature-3:hover i {
+    background: rgb(255, 191, 0);
+    color: #fff;
+}
+
+.feature-3:hover .border {
+    border-color: rgb(255, 191, 0);
+}
+
+.portfolio-caption a i {
+    color: rgb(255, 191, 0);
+}
+.portfolio-item:hover .portfolio-caption {
+    background-color: rgba(190, 145, 8, 0.7);
+}
+
+.welcome-section:hover .border {
+    border-color: rgb(255, 191, 0);
+}
+
+.welcome-section:hover h4 {
+    color: rgb(255, 191, 0);
+}
+
+.about-text li i {
+    color: rgb(255, 191, 0);
+}
+
+.about-us-section-2 .carousel-indicators li,
+.project-image .carousel-indicators li {
+	border: 2px solid rgb(255, 191, 0) !important;
+}
+
+.about-us-section-2 .carousel-indicators .active,
+.project-image .carousel-indicators .active {
+	background-color: rgb(255, 191, 0);
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+	background: rgb(255, 191, 0);
+}
+
+#team-section .nav-tabs.nav-justified {
+    background: rgb(255, 191, 0);
+}
+
+.team-member .team-details {
+    background-color: rgb(255, 191, 0);
+}
+
+.counter-item i {
+    color: rgb(255, 191, 0);
+}
+.timer {
+    color: rgb(255, 191, 0);
+}
+.latest-post h4 {
+    color: rgb(255, 191, 0);
+}
+.latest-post .post-details li i {
+    color: rgb(255, 191, 0);
+}
+
+.testimonials .testimonial-content img {
+    border: 3px solid rgb(255, 191, 0);
+}
+.testimonials .testimonial-author .author {
+    color: rgb(255, 191, 0);
+}
+.testimonials-carousel .owl-controls.clickable .owl-buttons div{
+	color: rgb(255, 191, 0);
+}
+.owl-theme .owl-controls .owl-page.active{
+    background-color: rgb(255, 191, 0);
+}
+
+.contact .form-control:focus {
+    border-color: rgb(255, 191, 0);
+    box-shadow: none;
+}
+
+footer.style-1 .footer-social li a {
+    background: rgb(255, 191, 0);
+}
+
+.call-to-action h1 strong {
+    color: rgb(255, 191, 0);   
+}
+
+.team-details li a {
+    background: rgb(255, 191, 0);
+}
+
+.progress-bar {
+    background: rgb(255, 191, 0);
+}
+
+
+.pricing-tables .pricing-table.highlight-plan .plan-name {
+    background: rgb(255, 191, 0);
+}
+
+.pricing-tables .pricing-table.highlight-plan .plan-signup {
+    background: rgb(255, 191, 0);
+}
+
+.footer-contact-info {
+    background: rgb(255, 191, 0);
+}
+
+footer.style-1 {
+    border-top: 2px solid rgb(255, 191, 0);
+}
+
+#main-slide .slider-content h1 strong {
+    color: rgb(255, 191, 0);
+}
+
+.latest-post .post-details .date {
+    background: rgba(255, 191, 0);
+}
+
+.custom-tab .nav-tabs.nav-justified {
+    background: rgb(255, 191, 0);
+}
+
+.plan-name {
+    background: rgb(255, 191, 0);
+}
+
+.plan-signup {
+    background: rgb(255, 191, 0);
+}
+
+.dot1, .dot2 {
+    background-color: rgb(255, 191, 0);
+}
