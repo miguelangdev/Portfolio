@@ -185,7 +185,18 @@ $(".anim").css(
   "animation",
   "typing 2s steps(9), blink .5s step-end infinite alternate"
 );
-
+$(".anim").css(
+  "width",
+  " 9.2ch"
+);
+$(".anim2").css(
+  "animation",
+  "typing 2s steps(10), blink .5s step-end infinite alternate"
+);
+$(".anim2").css(
+  "width",
+  " 10.2ch"
+);
 //Tabs controller
 
 var tabs = $(".tabs");

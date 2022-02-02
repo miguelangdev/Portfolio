@@ -1092,7 +1092,7 @@ body,
 /*------------------------------------------*/
 
 .portfolio-section-1 {
-  padding-top: 250px;
+  padding-top: 55px;
   padding-bottom: 120px;
 }
 
@@ -1790,8 +1790,9 @@ iframe {
 }
 
 #about-me {
-  height: 35%;
-  margin-top: 120px;
+  height: 85%;
+  margin-top: 100px;
+  padding-top: 20px;
 }
 
 #container-about-me {
@@ -1801,12 +1802,16 @@ iframe {
 }
 
 #description {
-  float: right;
+  float: left;
   width: 60%;
 }
 
 #img-about-me {
   float: left;
+  width: 40%;
+}
+
+#img-about-me img{
   width: 40%;
 }
 
@@ -1949,7 +1954,8 @@ padding-left: 20px;
 }
 
 #experience{
-  height: 300px;
+  height: 355px;
+  padding-top: 55px;
 }
 
 #experience .carousel-control{
@@ -1957,8 +1963,8 @@ padding-left: 20px;
 }
 
 #formacion{
-  height: 300px;
-  margin-top: 55px;
+  height: 355px;
+  padding-top: 55px;
 }
 
 #formacion .carousel-control{
@@ -1998,7 +2004,7 @@ text-align: center;
   transform:scale(1.15);
 }
 
-.carousel-fade .carousel-inner .item .card-img{
+.carousel-inner .item .card-img{
   max-width: 25%;
   max-height: 50%;
   position: relative;
@@ -2015,7 +2021,6 @@ text-align: center;
   cursor: pointer;
   border-radius: 50%;
   position: relative;
-  top: 5%;
 }
 
 .container-card {
