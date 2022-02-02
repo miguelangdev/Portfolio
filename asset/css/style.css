@@ -69,6 +69,8 @@ body {
     rgba(0, 0, 0, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#505050', endColorstr='#000000', GradientType=1 );
+
+  background-attachment: fixed;
 }
 
 p {
@@ -642,7 +644,6 @@ li {
     rgba(0, 0, 0, 0.6),
     rgba(0, 0, 0, 0.8)
   );
-  color: #fff;
   z-index: 10;
   bottom: 0px;
 }
@@ -729,18 +730,6 @@ body,
   height: 100%;
 }
 
-.item:nth-child(1) {
-  background: grey;
-}
-
-.item:nth-child(2) {
-  background: grey;
-}
-
-.item:nth-child(3) {
-  background: grey;
-}
-
 #main-slide .item {
   height: 700px;
 }
@@ -785,7 +774,7 @@ body,
 .carousel-indicators li {
   width: 14px !important;
   height: 14px !important;
-  border: 2px solid #fff !important;
+  border: 2px solid rgba(190, 145, 8, 0.7) !important;
   margin: 1px !important;
 }
 
@@ -1103,7 +1092,7 @@ body,
 /*------------------------------------------*/
 
 .portfolio-section-1 {
-  padding-top: 150px;
+  padding-top: 250px;
   padding-bottom: 120px;
 }
 
@@ -1802,6 +1791,7 @@ iframe {
 
 #about-me {
   height: 35%;
+  margin-top: 120px;
 }
 
 #container-about-me {
@@ -1812,12 +1802,12 @@ iframe {
 
 #description {
   float: right;
-  width: 50%;
+  width: 60%;
 }
 
 #img-about-me {
   float: left;
-  width: 50%;
+  width: 40%;
 }
 
 #navegacion{
@@ -1956,6 +1946,126 @@ padding-left: 20px;
 #footer-contact {
   color: white;
   float: right;
+}
+
+#experience{
+  height: 300px;
+}
+
+#experience .carousel-control{
+  width: 5%;
+}
+
+#formacion{
+  height: 300px;
+  margin-top: 55px;
+}
+
+#formacion .carousel-control{
+  width: 5%;
+}
+
+.experience-header{
+color: white;
+text-align: center;
+}
+
+.card {
+  position: relative;
+  top: 10%;
+  left: 17%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  min-width: 40%;
+  border-radius: 5px;
+  height: 80%;
+  width: 65%;
+  background: white;
+
+  -webkit-transition:all .9s ease; /* Safari y Chrome */
+-moz-transition:all .9s ease; /* Firefox */
+-o-transition:all .9s ease; /* IE 9 */
+-ms-transition:all .9s ease; /* Opera */
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
+  -webkit-transform:scale(1.15);
+  -moz-transform:scale(1.15);
+  -ms-transform:scale(1.15);
+  -o-transform:scale(1.15);
+  transform:scale(1.15);
+}
+
+.carousel-fade .carousel-inner .item .card-img{
+  max-width: 25%;
+  max-height: 50%;
+  position: relative;
+  top: 25%;
+}
+
+.rounded-button{
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+  top: 5%;
+}
+
+.container-card {
+  padding: 2px 16px;
+  background: white;
+  width: 60%;
+  height: 100%;
+  float: right;
+  margin-right: 0.6%;
+}
+
+.container-experience{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#experience-left{
+  float: left;
+  width: 33.3%;
+  height: 100%;
+}
+
+#experience-right{
+  float: right;
+  width: 33.3%;
+  height: 100%;
+}
+
+#experience-center{
+  float: left;
+  width: 33.3%;
+  height: 100%;
+}
+
+#formacion-left{
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+#formacion-right{
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+
+#formacion .card{
+  width: 50%;
+  left: 24.3%;
 }
 
 @-webkit-keyframes rotatee {

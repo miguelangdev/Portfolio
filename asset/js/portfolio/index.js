@@ -257,11 +257,22 @@ function loadTabs() {
       var p = document.createElement("P");
       p.innerHTML = dbTables[0][i][z][2];
       div2.appendChild(p);
-
-      div2.innerHTML +=
-        "<a href='#' data-toggle='modal' data-target='#" +
-        dbTables[0][i][z][3] +
-        "' class='link-1'><i class='fa fa-magic'></i></a>";
+      
+      var text;
+      
+      if(dbTables[0][i][z][5] == "#") {
+        text = "<a href='#' data-toggle='modal' data-target='#" +
+                dbTables[0][i][z][3] +
+                "'><i class='fa fa-magic'></i></a>";
+                
+      div2.innerHTML += text;
+      }
+      else {
+        text = "<a href='#' data-toggle='modal' data-target='#" +
+                dbTables[0][i][z][3] +
+                "' class='link-1'><i class='fa fa-magic'></i></a>";
+                
+      div2.innerHTML += text;
 
       var a2 = document.createElement("A");
       a2.href = dbTables[0][i][z][5];
@@ -271,6 +282,7 @@ function loadTabs() {
       var i2 = document.createElement("I");
       i2.className = "fa fa-link";
       a2.appendChild(i2);
+      }
     }
   }
 }
