@@ -277,7 +277,7 @@ function loadTabs() {
 
 function changeTab(i) {
   for (let z = 0; z < contents.length; z++) {
-    contents[z].style.display = "none";
+    if(contents[z]) contents[z].style.display = "none";
     if (z == i) contents[z].style.display = "block";
   }
 

@@ -629,7 +629,7 @@ li {
 }
 
 #carousel-section {
-  height: 65%;
+  height: 100%;
   width: 100%;
 }
 
@@ -1132,8 +1132,9 @@ body,
   overflow: hidden;
   display: inline-block;
   width: 50%;
-  margin-left: -4px;
-  margin-bottom: -5px;
+  margin-left: 3.5px;
+  margin-right: 3.5px;
+  margin-bottom: 2px;
   padding: 0;
   text-align: center;
   -webkit-transition: all 0.5s;
@@ -1156,7 +1157,7 @@ body,
 
 @media (min-width: 768px) {
   #portfolio-list li {
-    width: 33.3%;
+    width: 32.7206%;
   }
 }
 
@@ -1262,7 +1263,7 @@ body,
   -o-border-radius: 100%;
   background: #fff;
   position: absolute;
-  top: 60%;
+  top: 75%;
   left: 40%;
 }
 
