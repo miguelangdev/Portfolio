@@ -9,6 +9,10 @@ var dbTables = [
         "AIRBORNModal",
         "Juego en curso basado para android en unity. Eres un paracaidista de la segunda guerra mundial y el juego consiste en conseguir llegar a tierra sin morir, es un infinity run 2D donde aparecen elementos como balas y trozos de aviones que tendrás que esquivar para llegar sin morir a tierra, tendrás power-ups y podrás comprar nuevas skins para el personaje.\nRealizado por un equipo de siete personas donde soy el Lead programmer.",
         "#",
+        "Lead Programmer",
+        "Unity",
+        "C#",
+        "sqlite, android",
       ],
       [
         "asset/images/portfolio/Dumbwars.jpg",
@@ -17,6 +21,10 @@ var dbTables = [
         "DumbWarsModal",
         "Juego para móviles basado en unity. Consiste en un arcade donde combates contra la IA. Manejas una facción y tienes que derrotar a todas las facciones enemigas. En el combate manejas tu fortaleza y envías enemigos por cinco calles en las cuales puedes construir además pequeños muros o torres para impedir al contrario avanzar, la IA intentara evitar que llegues a su castillo mientras a su vez intenta destruir el tuyo. En el juego también se puede mejorar personajes y comprar nuevos, y además posee un modo orda infinita donde puedes luchar infinitamente a cambio de recompensas.\nHe sido productor y programador, además de añadir el sonido, dentro de este proyecto en un grupo pequeño de 4 personas.",
         "#",
+        "Lead Programmer",
+        "Unity",
+        "C#",
+        "sqlite, android",
       ],
       [
         "asset/images/portfolio/mementumvr.jpg",
@@ -25,6 +33,10 @@ var dbTables = [
         "MementumVRModal",
         "Mementum VR es un ambicioso proyecto propio que consiste en la creación del primer portal de Realidad Virtual en el que poder sumergirte en la historia. Podrás ver, andar, tocar y sentir tan de cerca la historia que creerá participar en ella.\nCada ciudad podrá disponer de una experiencia Mementum VR que recreará como era la vida en un monumento histórico-cultural en un periodo de tiempo pasado.\nTodas las experiencias Mementum VR tienen un denominador común. El hiperrealismo y el rigor histórico.\nLa primera experiencia piloto ya está finalizada…. y cómo no? Es una recreación histórica de uno de los monumentos de mayor interés de Málaga, El Teatro Romano de Málaga.",
         "http://vrestudio.com/projects/mementun.html",
+        "Lead Programmer",
+        "Unreal Engine 4",
+        "C++",
+        "VR",
       ],
       [
         "asset/images/portfolio/vertigoVR.jpg",
@@ -33,6 +45,10 @@ var dbTables = [
         "VertigoVRModal",
         "Con motivo de la inauguración del Polo de Contenidos Digitales de Málaga dedicamos nuestro esfuerzo en la creación de una experiencia en Realidad Virtual divertida en la que poder entretener a los asistentes a la vez de terapéutica para personas con miedo a las alturas.\nEn VERTIGO VR, pondremos a prueba tu equilibrio, llevaremos al límite tus sentidos y tus miedos, una experiencia VR cuyo propósito es pasar un buen rato entre amigos, conseguir la mejor puntuación y... ¿Por qué no? superar tu fobia a las alturas.\nUn juego con un alto grado de competitividad entre sus usuarios. Cruzar nuestra pasarela de 4 metros de longitud sin caerse ni perder el equilibrio no está al alcance de cualquiera.",
         "http://vrestudio.com/projects/Vertigo.html#",
+        "Lead Programmer",
+        "Unreal Engine 4",
+        "C++",
+        "VR",
       ],
       [
         "asset/images/portfolio/WESTERN.jpg",
@@ -41,6 +57,10 @@ var dbTables = [
         "WesternVRModal",
         "Juego de realidad virtual basado en unreal engine 4. Es un proyecto no publicado. Consiste en disparar a los enemigos que se aproximan y conseguir la máxima puntuación. Trabajé en un grupo de 7 personas, junto a otros dos programadores.",
         "#",
+        "Lead Programmer",
+        "Unreal Engine 4",
+        "C++",
+        "VR",
       ],
       [
         "asset/images/portfolio/VREapp.jpg",
@@ -49,6 +69,10 @@ var dbTables = [
         "VREappModal",
         "Desarrollé una aplicación en android studio para la empresa VREstudio, la cual reproduce vídeos en realidad virtual con un reproductor propio, descarga contenido online los cuales se añaden dinámicamente mediante una base de datos no relacional, y genera una cola de descargas cuanto más cosas quieras descargar. Fui el único programador en este proyecto.",
         "#",
+        "Lead Programmer",
+        "Android Studio",
+        "JAVA",
+        "Firebase, VR",
       ],
       [
         "asset/images/portfolio/WebVR.jpg",
@@ -57,6 +81,10 @@ var dbTables = [
         "WebVRModal",
         "Un proyecto para convertir la página de la empresa en una página adaptada a realidad virtual con la que poder enseñar mejor los conocimientos de la empresa dentro de este campo.\nHe sido la única persona en este proyecto.",
         "#",
+        "Lead Programmer",
+        "Web",
+        "XML",
+        "VR",
       ],
       [
         "asset/images/portfolio/COPWARS.jpg",
@@ -65,6 +93,10 @@ var dbTables = [
         "COPWARSModal",
         "Juego HTLM hecho con Phaser y Javascript. Realizado solo por mí como unico integrante del equipo. Consiste en un juego donde puedes comprar mejoras, y tienes que sobrevivir a oleadas de enemigos. En dicho juego se usa firebase para base de datos y creación de usuarios incluida la posibilidad de crear la cuenta con google o facebook.",
         "#",
+        "Lead Programmer",
+        "Web",
+        "Javascript",
+        "Phaser 3, Firebase, Facebook",
       ],
       [
         "asset/images/portfolio/sinnet.jpg",
@@ -73,6 +105,10 @@ var dbTables = [
         "SinnetModal",
         "Juego de terror basado en unreal engine 4. La historia se basa en una de las alucinaciones del personaje el cual cree estar en un castillo lleno de trampas y una criatura, todo controlado por alguien que lo intenta matar. Cuando el jugador consigue volver a la realidad se da cuenta que está en su casa y él está siendo el narrador que dirige el castillo.",
         "#",
+        "Lead Programmer",
+        "Unreal Engine 4",
+        "C++",
+        "Nada",
       ],
       [
         "asset/images/portfolio/COMIN.jpg",
@@ -81,6 +117,10 @@ var dbTables = [
         "CominModal",
         "Aplicación de gestión de comunidades y sus incidencias.\nConsiste en una aplicación móvil realizada para android, la cual permite gestionar las comunidades que tengas a tu cargo, añadiendo viviendas, personas o incidencias las cuales pueden ser asociadas a las viviendas, personas o comunidad. También permite la gestión de grupos de personas, guardar mensajes y guardar incidencias para poder crearlos rápidamente. Se puede filtrar de manera sencilla cualquier cosa que te interese, y añadir una configuración propia a cada comunidad. Además se puede enviar correos o llamar mediante la aplicación para avisar de cualquier incidencia que haya ocurrido o mandar una circular a todos los vecinos.\nEste proyecto lo he ido realizando en mi tiempo libre y por ello se ha alargado tanto. He sido el único integrante en este proyecto por lo que lo he hecho al 100% yo mismo.",
         "#",
+        "Lead Programmer",
+        "Android Studio",
+        "JAVA",
+        "sqlite",
       ],
       [
         "asset/images/portfolio/uList.jpg",
@@ -89,6 +129,10 @@ var dbTables = [
         "UlistModal",
         "Proyecto de fin de grado. Consiste en crear una herramienta online que permite organizar tus películas, series y libros favoritos, mediante una base de datos externa donde puedes seleccionar cada producto, los cuales tienen una ficha técnica donde hay una valoración media general, donde se encuentra descripción y análisis del propio producto, además se le permite a los usuarios crear sus propios análisis y filtrar los mismos. Una sección para mostrar tus elementos seleccionados, y puedes filtrar en ellas. Puedes editar opciones de visualización,, idiomas y perfil. Cuenta con página de registro y se encripta todos los datos proporcionados.\nHe sido el único participante en el proyecto por lo que he ejercido de diseñador, artista y programador.",
         "#",
+        "Lead Programmer",
+        "APP",
+        "C#",
+        "MySQL, encriptado RSA",
       ],
     ],
     [
@@ -206,8 +250,7 @@ var activeItem = tabs.find(".active");
 var activeWidth = activeItem.innerWidth();
 var contents = [
   document.getElementById("proyectos"),
-  document.getElementById("conocimientos"),
-  document.getElementById("sobremi"),
+  document.getElementById("conocimientos")
 ];
 
 $(".selector").css({
@@ -228,7 +271,7 @@ $(".tabs").on("click", "a", function (e) {
 });
 
 function loadTabs() {
-  for (let i = 0; i < contents.length - 1; i++) {
+  for (let i = 0; i < contents.length; i++) {
     var ul = document.createElement("UL");
     ul.id = "portfolio-list";
     contents[i].appendChild(ul);
@@ -240,16 +283,83 @@ function loadTabs() {
       div.className = "portfolio-item";
       li.appendChild(div);
 
-      div.innerHTML +=
-        "<div class='section-modal modal fade' id=" +
-        dbTables[0][i][z][3] +
-        " tabindex='-1' role='dialog' aria-hidden='true'><div class='modal-content'><div class='close-modal' data-dismiss='modal'><div class='lr'><div class='rl'></div></div></div><div class='container'><div class='row'><div class='section-title text-center'><h3>" +
-        dbTables[0][i][z][1] +
-        "</h3><p>" +
+      var modaldivtext = "<div class='section-modal modal fade' id=" +
+      dbTables[0][i][z][3] +
+      " tabindex='-1' role='dialog' aria-hidden='true'>"+
+      "<div class='modal-content'>"+
+      "<div class='close-modal' data-dismiss='modal'>"+
+      "<div class='lr'>"+
+      "<div class='rl'>"+
+      "</div></div></div>"+
+      "<div class='container'>"+
+      "<div class='row justify-content-center'>"+
+      "<div class='section-title text-center'>"+
+      "<h3>" +
+      dbTables[0][i][z][1] +
+      "</h3>"+
+      "<img src=" +
+      dbTables[0][i][z][0] +
+      " class='img_modal' alt='..'>";
+
+      if(i==0){
+        modaldivtext+= 
+        "<div class='modal_description'>"+
+        "<h4>" +
+        "DESCRIPCIÓN" +
+        "</h4>"+
+        "<p>" +
         dbTables[0][i][z][4] +
-        "</p></div></div><div class='row'><div class='col-md-6'><img src=" +
-        dbTables[0][i][z][0] +
-        " class='img_modal' alt='..'></div></div></div></div></div>";
+        "</p>"+
+        "</div>"+
+        "<div class='modal_table'>"+
+        "<table>"+
+        "<tr>"+
+        "<th colspan='2'>Ficha técnica</th>"+
+        "</tr>"+
+        "<tr>"+
+        "<td> Puesto </td>"+
+        "<td>"+
+        dbTables[0][i][z][6]+
+        "</td>"+
+        "</tr>"+
+        "<tr>"+
+        "<td> Plataforma </td>"+
+        "<td>"+
+        dbTables[0][i][z][7]+
+        "</td>"+
+        "</tr>"+
+        "<tr>"+
+        "<td> Lenguaje </td>"+
+        "<td>"+
+        dbTables[0][i][z][8]+
+        "</td>"+
+        "</tr>"+
+        "<tr>"+
+        "<td> Uso adicional </td>"+
+        "<td>"+
+        dbTables[0][i][z][9]+
+        "</td>"+
+        "</tr>"+
+        "</table>"+
+        "</div></div></div>"+
+        "<div class='row'>"+
+        "<div class='col-md-6'>"+
+        "</div></div></div></div></div>";
+        
+      }else{
+        modaldivtext += 
+        "<h4>" +
+        "DESCRIPCIÓN" +
+        "</h4>"+
+        "<p>" +
+        dbTables[0][i][z][4] +
+        "</p></div></div>"+
+        "<div class='row'>"+
+        "<div class='col-md-6'>"+
+        "</div></div></div></div></div>";
+      }
+
+      div.innerHTML += modaldivtext;
 
       var img = document.createElement("IMG");
       img.src = dbTables[0][i][z][0];
@@ -270,7 +380,7 @@ function loadTabs() {
       div2.appendChild(p);
       
       var text;
-      
+
       if(dbTables[0][i][z][5] == "#") {
         text = "<a href='#' data-toggle='modal' data-target='#" +
                 dbTables[0][i][z][3] +
@@ -288,6 +398,7 @@ function loadTabs() {
       var a2 = document.createElement("A");
       a2.href = dbTables[0][i][z][5];
       a2.className = "link-2";
+      a2.target = "_blank";
       div2.appendChild(a2);
 
       var i2 = document.createElement("I");

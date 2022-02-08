@@ -131,17 +131,28 @@ li {
 .section-title h3 {
   color: #666;
   font-style: italic;
+  font-size: 48px;
+  font-family: "Oswald", sans-serif;
+  text-transform: none;
+  margin-bottom: 2%;
+}
+
+.section-title h4 {
+  color: #666;
+  font-style: italic;
   font-size: 28px;
   font-family: "Oswald", sans-serif;
   text-transform: none;
+  margin-top: 2%;
 }
 
 .section-title p {
   padding-bottom: 60px;
-  color: #999;
+  color: #000;
   font-size: 18px;
   font-style: italic;
-  font-weight: 300;
+  font-weight: 500;
+  margin-top: 2%;
 }
 
 .btn-primary {
@@ -1146,7 +1157,7 @@ body,
 
 @media (min-width: 768px) {
   #portfolio-list li {
-    width: 32.7206%;
+    width: 32.7%;
   }
 }
 
@@ -1311,8 +1322,9 @@ footer.style-1 .footer-link li {
 /**** Start Modal Section ****/
 
 .section-modal .modal-content {
-  padding: 100px 0 !important;
+  padding: 10px 0 !important;
   min-height: 100%;
+  min-width: 102%;
   border: 0 !important;
   border-radius: 0;
   background-clip: border-box;
@@ -1323,10 +1335,22 @@ footer.style-1 .footer-link li {
   font-weight: 300;
 }
 
+.modal_table table{
+  margin: auto;
+}
+
+th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  color: #000;
+  padding: 4px;
+}
+
 .section-modal .close-modal {
   position: absolute;
   top: 25px;
-  right: 25px;
+  right: 45px;
   width: 75px;
   height: 75px;
   background-color: transparent;
@@ -1356,6 +1380,17 @@ footer.style-1 .footer-link li {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
+}
+
+.modal_description{
+  float: left;
+  width: 70%;
+}
+
+.modal_table{
+  float: right;
+  width: 30%;
+  padding-top: 6%;
 }
 
 /*---------------------------------------------------------------*/
@@ -1838,12 +1873,12 @@ iframe {
 }
 
 .img_modal {
-  width: 300px;
-  height: 230px;
+  width: 600px;
+  height: 460px;
 }
-.img_modal:hover {
-  width: 300px;
-  height: 230px;
+
+.portfolio-item:hover div img {
+  transform: scale(1);
 }
 
 .tabs {
@@ -2071,6 +2106,110 @@ text-align: center;
 #formacion .card{
   width: 50%;
   left: 24.3%;
+}
+
+.navbar .tittle{
+  font-size: 48px;
+  color: white;
+  position: relative;
+  visibility: collapse;
+}
+
+@media (min-width: 350px) and (max-width: 450px) {
+  .navbar .tittle {
+    font-size: 21px;
+    font-weight: bold;
+    padding-top: 11px;
+    padding-left: 10px;
+    position: fixed;
+    color: white;
+    visibility: visible;
+  }
+
+  #carousel-section{
+    height: 55%;
+  }
+
+  .carousel-indicators{
+    z-index: -6;
+  }
+
+  .carousel-control{
+    top: -400px;
+  }
+
+  #experience{
+    height: 1280px;
+  }
+
+  #experience-left{
+    width: 100%;
+    height: 33.3%;
+  } 
+  
+  #experience .card{
+    width: 77%;
+    left: 13%;
+  }
+
+  #formacion{
+    height: 1000px;
+  }
+
+  #formacion-left{
+    width: 100%;
+    height: 50%;
+  }
+
+  #formacion .card{
+    width: 77%;
+    left: 13%;
+  }
+
+  #about-me{
+    height: 1680px;
+  }
+
+  #img-about-me {
+    width: 100%;
+  }
+
+  #img-about-me img {
+    width: 70%;
+    padding-bottom: 20px;
+  }
+
+  #description {
+    float: left;
+    width: 100%;
+  }
+
+  .section-modal .close-modal {
+    right: 7px;
+  }
+
+  .img_modal {
+    width: 100%;
+    height: 460px;
+    padding-bottom: 20px;
+  }
+
+  .modal_description {
+    float: left;
+    width: 94%;
+    margin-left: 11px;
+    margin-right: 11px;
+  }
+
+  .modal{
+    overflow: auto;
+  }
+
+  .modal_table {
+    float: left;
+    width: 100%;
+    padding-top: 0%;
+  }
 }
 
 @-webkit-keyframes rotatee {
