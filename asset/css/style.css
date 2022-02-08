@@ -2111,7 +2111,7 @@ text-align: center;
 .navbar .tittle{
   font-size: 48px;
   color: white;
-  position: relative;
+  position: absolute;
   visibility: collapse;
 }
 
