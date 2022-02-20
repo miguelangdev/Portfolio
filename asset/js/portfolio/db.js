@@ -1,36 +1,25 @@
-/*var dbTables;
-var dbTypeInfo;
-window.onload = function(){
-    if(!window.openDatabase){
-        alert('Este navegador no soporta WebSQL abre la página con otro navegador');
-        return;
-    }
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-analytics.js";
+import { getFirestore, collection, onSnapshot } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-firestore.js";
 
-    var db = openDatabase('db.db', '1.0', 'Portfolio', 50*1024*1024);
-    console.log(db);
-    db.transaction(function (tx) {
-        tx.executeSql('SELECT DISTINCT type from Items', [], function (tx, results) {
-            for (let i = 0; i < results.rows.length; i++){
-                dbTypeInfo.push(results.rows.item(i).word);
-            }
-        }, null);
-    });
-    db.transaction(function (tx) {
-        tx.executeSql('SELECT type, img, tittle, description, idmodal, modaldescription, link from Items order by Type DESC, Priority', [], function (tx, results) {
-            var len = results.rows.length;
+const firebaseConfig = {
+  apiKey: "AIzaSyCiXWglM415zSFxywCxnMLIGUlKlUmAf2M",
+  authDomain: "portfolio-618f9.firebaseapp.com",
+  projectId: "portfolio-618f9",
+  storageBucket: "portfolio-618f9.appspot.com",
+  messagingSenderId: "353456669296",
+  appId: "1:353456669296:web:ffa98e10a91d132306eab5",
+  measurementId: "G-21TF56FEXQ"
+};
 
-        }, null);
-    });
-}*/
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+const db = getFirestore();
 
-/*const path = require('path');
-const {Database} = require('sqlite3').verbose();
-const db = new Database(path.join(__dirname, "../../asset/db/", "db.db"));
-
-async function createDb(){
-    return
-}
-
-module.exports = {
-    createDb
-}*/
+export const onAboutme = (callback) => onSnapshot(collection(db, 'Aboutme'), callback);
+export const onCarousel = (callback) => onSnapshot(collection(db, 'Carousel'), callback);
+export const onExperience = (callback) => onSnapshot(collection(db, 'Experience'), callback);
+export const onFormacion = (callback) => onSnapshot(collection(db, 'Formacion'), callback);
+export const onPortfolio = (callback) => onSnapshot(collection(db, 'Portfolio'), callback);

@@ -1,257 +1,70 @@
-var ini = false;
-var dbTables = [
-  [
-    [
-      [
-        "asset/images/portfolio/Airborn.jpg",
-        "AIRBORN",
-        "Juego desarrollado en Unity para android",
-        "AIRBORNModal",
-        "Juego en curso basado para android en unity. Eres un paracaidista de la segunda guerra mundial y el juego consiste en conseguir llegar a tierra sin morir, es un infinity run 2D donde aparecen elementos como balas y trozos de aviones que tendrás que esquivar para llegar sin morir a tierra, tendrás power-ups y podrás comprar nuevas skins para el personaje.\nRealizado por un equipo de siete personas donde soy el Lead programmer.",
-        "#",
-        "Lead Programmer",
-        "Unity",
-        "C#",
-        "sqlite, android",
-      ],
-      [
-        "asset/images/portfolio/Dumbwars.jpg",
-        "Dumb Wars",
-        "Juego desarrollado en Unity para android",
-        "DumbWarsModal",
-        "Juego para móviles basado en unity. Consiste en un arcade donde combates contra la IA. Manejas una facción y tienes que derrotar a todas las facciones enemigas. En el combate manejas tu fortaleza y envías enemigos por cinco calles en las cuales puedes construir además pequeños muros o torres para impedir al contrario avanzar, la IA intentara evitar que llegues a su castillo mientras a su vez intenta destruir el tuyo. En el juego también se puede mejorar personajes y comprar nuevos, y además posee un modo orda infinita donde puedes luchar infinitamente a cambio de recompensas.\nHe sido productor y programador, además de añadir el sonido, dentro de este proyecto en un grupo pequeño de 4 personas.",
-        "#",
-        "Lead Programmer",
-        "Unity",
-        "C#",
-        "sqlite, android",
-      ],
-      [
-        "asset/images/portfolio/mementumvr.jpg",
-        "MementumVR",
-        "Experiencia desarrollada con Unreal engine 4 para realidad virtual",
-        "MementumVRModal",
-        "Mementum VR es un ambicioso proyecto propio que consiste en la creación del primer portal de Realidad Virtual en el que poder sumergirte en la historia. Podrás ver, andar, tocar y sentir tan de cerca la historia que creerá participar en ella.\nCada ciudad podrá disponer de una experiencia Mementum VR que recreará como era la vida en un monumento histórico-cultural en un periodo de tiempo pasado.\nTodas las experiencias Mementum VR tienen un denominador común. El hiperrealismo y el rigor histórico.\nLa primera experiencia piloto ya está finalizada…. y cómo no? Es una recreación histórica de uno de los monumentos de mayor interés de Málaga, El Teatro Romano de Málaga.",
-        "http://vrestudio.com/projects/mementun.html",
-        "Lead Programmer",
-        "Unreal Engine 4",
-        "C++",
-        "VR",
-      ],
-      [
-        "asset/images/portfolio/vertigoVR.jpg",
-        "VertigoVR",
-        "Juego desarrollado con Unreal engine 4 para realidad virtual",
-        "VertigoVRModal",
-        "Con motivo de la inauguración del Polo de Contenidos Digitales de Málaga dedicamos nuestro esfuerzo en la creación de una experiencia en Realidad Virtual divertida en la que poder entretener a los asistentes a la vez de terapéutica para personas con miedo a las alturas.\nEn VERTIGO VR, pondremos a prueba tu equilibrio, llevaremos al límite tus sentidos y tus miedos, una experiencia VR cuyo propósito es pasar un buen rato entre amigos, conseguir la mejor puntuación y... ¿Por qué no? superar tu fobia a las alturas.\nUn juego con un alto grado de competitividad entre sus usuarios. Cruzar nuestra pasarela de 4 metros de longitud sin caerse ni perder el equilibrio no está al alcance de cualquiera.",
-        "http://vrestudio.com/projects/Vertigo.html#",
-        "Lead Programmer",
-        "Unreal Engine 4",
-        "C++",
-        "VR",
-      ],
-      [
-        "asset/images/portfolio/WESTERN.jpg",
-        "WesternVR",
-        "Juego desarrollado con Unreal engine 4 para realidad virtual",
-        "WesternVRModal",
-        "Juego de realidad virtual basado en unreal engine 4. Es un proyecto no publicado. Consiste en disparar a los enemigos que se aproximan y conseguir la máxima puntuación. Trabajé en un grupo de 7 personas, junto a otros dos programadores.",
-        "#",
-        "Lead Programmer",
-        "Unreal Engine 4",
-        "C++",
-        "VR",
-      ],
-      [
-        "asset/images/portfolio/VREapp.jpg",
-        "VREapp",
-        "Aplicación desarrollada en Android Studio para móvil",
-        "VREappModal",
-        "Desarrollé una aplicación en android studio para la empresa VREstudio, la cual reproduce vídeos en realidad virtual con un reproductor propio, descarga contenido online los cuales se añaden dinámicamente mediante una base de datos no relacional, y genera una cola de descargas cuanto más cosas quieras descargar. Fui el único programador en este proyecto.",
-        "#",
-        "Lead Programmer",
-        "Android Studio",
-        "JAVA",
-        "Firebase, VR",
-      ],
-      [
-        "asset/images/portfolio/WebVR.jpg",
-        "WebVR",
-        "Web desarrollada con XML junto a plugins para realidad virtual",
-        "WebVRModal",
-        "Un proyecto para convertir la página de la empresa en una página adaptada a realidad virtual con la que poder enseñar mejor los conocimientos de la empresa dentro de este campo.\nHe sido la única persona en este proyecto.",
-        "#",
-        "Lead Programmer",
-        "Web",
-        "XML",
-        "VR",
-      ],
-      [
-        "asset/images/portfolio/COPWARS.jpg",
-        "COPWARS",
-        "Juego desarrollado con Phaser para web",
-        "COPWARSModal",
-        "Juego HTLM hecho con Phaser y Javascript. Realizado solo por mí como unico integrante del equipo. Consiste en un juego donde puedes comprar mejoras, y tienes que sobrevivir a oleadas de enemigos. En dicho juego se usa firebase para base de datos y creación de usuarios incluida la posibilidad de crear la cuenta con google o facebook.",
-        "#",
-        "Lead Programmer",
-        "Web",
-        "Javascript",
-        "Phaser 3, Firebase, Facebook",
-      ],
-      [
-        "asset/images/portfolio/sinnet.jpg",
-        "Sinnet",
-        "Juego desarrollado en Unreal engine 4 para ordenador",
-        "SinnetModal",
-        "Juego de terror basado en unreal engine 4. La historia se basa en una de las alucinaciones del personaje el cual cree estar en un castillo lleno de trampas y una criatura, todo controlado por alguien que lo intenta matar. Cuando el jugador consigue volver a la realidad se da cuenta que está en su casa y él está siendo el narrador que dirige el castillo.",
-        "#",
-        "Lead Programmer",
-        "Unreal Engine 4",
-        "C++",
-        "Nada",
-      ],
-      [
-        "asset/images/portfolio/COMIN.jpg",
-        "Comin",
-        "Aplicación desarrollada en Android Studio para móvil",
-        "CominModal",
-        "Aplicación de gestión de comunidades y sus incidencias.\nConsiste en una aplicación móvil realizada para android, la cual permite gestionar las comunidades que tengas a tu cargo, añadiendo viviendas, personas o incidencias las cuales pueden ser asociadas a las viviendas, personas o comunidad. También permite la gestión de grupos de personas, guardar mensajes y guardar incidencias para poder crearlos rápidamente. Se puede filtrar de manera sencilla cualquier cosa que te interese, y añadir una configuración propia a cada comunidad. Además se puede enviar correos o llamar mediante la aplicación para avisar de cualquier incidencia que haya ocurrido o mandar una circular a todos los vecinos.\nEste proyecto lo he ido realizando en mi tiempo libre y por ello se ha alargado tanto. He sido el único integrante en este proyecto por lo que lo he hecho al 100% yo mismo.",
-        "#",
-        "Lead Programmer",
-        "Android Studio",
-        "JAVA",
-        "sqlite",
-      ],
-      [
-        "asset/images/portfolio/uList.jpg",
-        "Ulist",
-        "Aplicación desarrollado con Visual Studio en C# para ordenador",
-        "UlistModal",
-        "Proyecto de fin de grado. Consiste en crear una herramienta online que permite organizar tus películas, series y libros favoritos, mediante una base de datos externa donde puedes seleccionar cada producto, los cuales tienen una ficha técnica donde hay una valoración media general, donde se encuentra descripción y análisis del propio producto, además se le permite a los usuarios crear sus propios análisis y filtrar los mismos. Una sección para mostrar tus elementos seleccionados, y puedes filtrar en ellas. Puedes editar opciones de visualización,, idiomas y perfil. Cuenta con página de registro y se encripta todos los datos proporcionados.\nHe sido el único participante en el proyecto por lo que he ejercido de diseñador, artista y programador.",
-        "#",
-        "Lead Programmer",
-        "APP",
-        "C#",
-        "MySQL, encriptado RSA",
-      ],
-    ],
-    [
-      [
-        "asset/images/portfolio/Pathfinding.jpg",
-        "IA pathfinding",
-        "Conocimientos básicos de pathfinding en Unity",
-        "PathfindingModal",
-        "He realizado proyectos en unity donde he tenido que realizar un programa que realiza búsquedas con diversos algoritmos de inteligencia artificial como A*, Búsqueda de amplitud, Hill Climbing o Búsqueda con horizonte entre otros.",
-        "#",
-      ],
-      [
-        "asset/images/portfolio/Algoritmos.jpg",
-        "IA algoritmos",
-        "Conocimientos básicos de diversos algoritmos aplicados en Unity",
-        "AlgoritmosModal",
-        "He realizado diversos trabajos de inteligencia artificial donde he tenido que aplicar algoritmos como MinMax, genéticos o redes neuronales.",
-        "#",
-      ],
-      [
-        "asset/images/portfolio/fisicas.jpg",
-        "Físicas con c++",
-        "Programa en c++ donde creo un sistema de físicas",
-        "fisicasModal",
-        "Se trata de un proyecto en el cual se intenta simular físicas de un videojuego con programación en c++, en este caso se usa una pelota que rebota en las paredes dependiendo de la zona donde hagas click se ejercerá una fuerza equivalente al vector resultante del centro de la pelota hasta el punto del click en pantalla.",
-        "#",
-      ],
-      [
-        "asset/images/portfolio/flocking.jpg",
-        "Flocking con c++",
-        "Programa realizado en c++ que simula un comportamiento de flocking",
-        "FlockingModal",
-        "Programa que simula el comportamiento de flocking realizado desde programación en c++, en el se puede ver como puedes mover una pelota que ejerce como lider para atraer a las demás pelotas donde estas se acercan a una distancia máxima y realiza una separación entre las demás con las cuales nunca llegan a tocarse pese a estar todas persiguiendo a la bola lider.",
-        "#",
-      ],
-      [
-        "asset/images/portfolio/nodejs.jpg",
-        "Combinar c++ y node.js",
-        "Programa que combina una dll programada en c++ y node.js para gestionar bases de datos",
-        "NodeModal",
-        "Programa donde creo una herramienta web para gestión de bases de datos, realizado a partir de una dll programada con c++ y el uso de node.js para combinar el lenguaje c++ con javascript y a partir de ello desarrollar la herramienta",
-        "#",
-      ],
-      [
-        "asset/images/portfolio/motor.jpg",
-        "Motor gráfico 3D",
-        "Motor gráfico 3D realizado con c++ usando varios plugins",
-        "MotorModal",
-        "Motor gráfico 3D desarrollado en c++, donde carga una escena a partir de un XML, y se realiza una pequeña escena de muestra para testear y comprobar el funcionamiento del motor.",
-        "#",
-      ],
-      [
-        "asset/images/portfolio/motfis3.jpg",
-        "Motor 3D con físicas",
-        "Motor 3D con físicas realizado con c++ usando varios plugins",
-        "Motfis3Modal",
-        "Motor gráfico 3D desarrollado en c++, este motor usa un plugin para incorporar físicas, el propio motor se encarga de la correcta gestión de las mismas, se carga una escena a partir de un XML, y se realiza una pequeña escena de muestra para testear y comprobar el funcionamiento del motor.",
-        "#",
-      ],
-      [
-        "asset/images/portfolio/motfis2.jpg",
-        "Motor 2D con físicas",
-        "Motor 2D con físicas realizado con c++ usando varios plugins",
-        "Motfis2Modal",
-        "Motor gráfico 2D desarrollado en c++, este motor usa un plugin para incorporar físicas, el propio motor se encarga de la correcta gestión de las mismas, se carga una escena a partir de un XML, y se realiza una pequeña escena de muestra para testear y comprobar el funcionamiento del motor.",
-        "#",
-      ],
-      [
-        "asset/images/portfolio/transformation.jpg",
-        "Transformación gerárquica",
-        "Conocimientos básicos de pathfinding en Unity",
-        "TransformModal",
-        "Programa realizado en c++ que se encarga de generar transformaciones de manera gerárquica, en el proyecto se puede ver un sistema planetario con sus respectivas lunas.",
-        "#",
-      ],
-    ],
-  ],
-  [],
-];
+import { onCarousel, onExperience, onFormacion, onAboutme, onPortfolio } from "./db.js";
 
-window.onload = function () {
+var ini = false;
+
+window.addEventListener("load", async () => {
   if (!ini) {
     ini = true;
+    loadCarousel();
+    loadExperience();
+    loadFormacion();
+    loadAboutme();
     loadTabs();
+    //Se puede abrir un modal directamente añadiendo a la página /?modal=[NOMBRE DEL MODAL] ej. /?modal=MementumVRModal
+    if (getQueryVariable("modal")) {
+      $("#"+getQueryVariable("modal")).modal("show");
+    }
   }
-};
+});
+
+function getQueryVariable(variable) {
+  var query = window.location.search.substring(1);
+  var vars = query.split("&");
+  for (let i = 0; i < vars.length; i++) {
+    let pair = vars[i].split("=");
+    if (pair[0].toUpperCase() == variable.toUpperCase()) {
+      return pair[1];
+    }
+  }
+  return null;
+}
 
 $("#carousel-movement").carousel({
   interval: 10000,
 });
+$("#experience-movement").carousel({
+  interval: 10000,
+});
+$("#formacion-movement").carousel({
+  interval: 10000,
+});
 
-//Cuando se genere el carousel por base de datos crear varios .anim con steps distintos para cada uno de ellos
-$(".anim").css(
-  "animation",
-  "typing 2s steps(9), blink .5s step-end infinite alternate"
-);
-$(".anim").css(
-  "width",
-  " 9.2ch"
-);
-$(".anim2").css(
-  "animation",
-  "typing 2s steps(10), blink .5s step-end infinite alternate"
-);
-$(".anim2").css(
-  "width",
-  " 10.2ch"
-);
 //Tabs controller
-
 var tabs = $(".tabs");
-var selector = $(".tabs").find("a").length;
-//var selector = $(".tabs").find(".selector");
 var activeItem = tabs.find(".active");
 var activeWidth = activeItem.innerWidth();
 var contents = [
   document.getElementById("proyectos"),
   document.getElementById("conocimientos")
 ];
+var carouselContent = 
+[
+  document.getElementById("carousel-section").getElementsByClassName("carousel-indicators"),
+  document.getElementById("carousel-section").getElementsByClassName("carousel-inner")
+];
+
+var experienceContent = 
+[
+  document.getElementById("experience").getElementsByClassName("carousel-indicators"),
+  document.getElementById("experience").getElementsByClassName("carousel-inner")
+];
+
+var formacionContent = 
+[
+  document.getElementById("formacion").getElementsByClassName("carousel-indicators"),
+  document.getElementById("formacion").getElementsByClassName("carousel-inner")
+];
+var aboutmeContent = document.getElementById("container-about-me");
 
 $(".selector").css({
   left: activeItem.position.left + "px",
@@ -270,152 +83,475 @@ $(".tabs").on("click", "a", function (e) {
   });
 });
 
-function loadTabs() {
-  for (let i = 0; i < contents.length; i++) {
-    var ul = document.createElement("UL");
-    ul.id = "portfolio-list";
-    contents[i].appendChild(ul);
-    for (let z = 0; z < dbTables[0][i].length; z++) {
-      var li = document.createElement("LI");
-      ul.appendChild(li);
+function loadCarousel(){
+  onCarousel((querySnapshot) => {
+    carouselContent[0][0].innerHTML = "";
+    carouselContent[1][0].innerHTML = "";
 
+    var carousel_data=[];
+    var i=0;
+    querySnapshot.forEach((doc) =>{
+      var carousel = doc.data();
+      carousel.Priority = Math.floor(carousel.Priority);
+      carousel_data[i] = carousel;
+      i++;
+    });
+
+    carousel_data.sort(function (a, b){
+      return (a.Priority - b.Priority)
+    });
+
+    carousel_data.sort();
+    
+    for(let i = 0; i < carousel_data.length; i++){
+      carouselContent[0][0].innerHTML += i==0 ?  "<li data-target='#carousel-movement' data-slide-to='"+i+"' class='active'></li>" : 
+      "<li data-target='#carousel-movement' data-slide-to='"+i+"'></li>";
+    }
+
+    let z = 0
+    carousel_data.forEach((doc) =>{
       var div = document.createElement("DIV");
-      div.className = "portfolio-item";
-      li.appendChild(div);
+      div.className = z==0? "item active" : "item";
+      carouselContent[1][0].appendChild(div);
+      var imgContent = doc.Type == "img"?  "<img src='"+doc.Source+"' alt=''>" : "<video autoplay muted loop id='VideoPlayer'><source src='"+doc.Source+"' type='video/"+doc.Type+"'></video>"
 
-      var modaldivtext = "<div class='section-modal modal fade' id=" +
-      dbTables[0][i][z][3] +
-      " tabindex='-1' role='dialog' aria-hidden='true'>"+
-      "<div class='modal-content'>"+
-      "<div class='close-modal' data-dismiss='modal'>"+
-      "<div class='lr'>"+
-      "<div class='rl'>"+
-      "</div></div></div>"+
-      "<div class='container'>"+
-      "<div class='row justify-content-center'>"+
-      "<div class='section-title text-center'>"+
-      "<h3>" +
-      dbTables[0][i][z][1] +
-      "</h3>"+
-      "<img src=" +
-      dbTables[0][i][z][0] +
-      " class='img_modal' alt='..'>";
+      div.innerHTML += "<a href='#' data-toggle='modal' data-target='#"+doc.Modal+"' class='link-1'>"+
+      imgContent+
+      "<div id='carousel-background'>"+
+      "<div id='carousel-wrapper'>"+
+      "<div id='carousel-text' class='anim"+z+"'>"+doc.Title+"</div>"+
+      "</div></div></a></div>";
 
-      if(i==0){
-        modaldivtext+= 
-        "<div class='modal_description'>"+
-        "<h4>" +
-        "DESCRIPCIÓN" +
-        "</h4>"+
-        "<p>" +
-        dbTables[0][i][z][4] +
-        "</p>"+
-        "</div>"+
-        "<div class='modal_table'>"+
-        "<table>"+
-        "<tr>"+
-        "<th colspan='2'>Ficha técnica</th>"+
-        "</tr>"+
-        "<tr>"+
-        "<td> Puesto </td>"+
-        "<td>"+
-        dbTables[0][i][z][6]+
-        "</td>"+
-        "</tr>"+
-        "<tr>"+
-        "<td> Plataforma </td>"+
-        "<td>"+
-        dbTables[0][i][z][7]+
-        "</td>"+
-        "</tr>"+
-        "<tr>"+
-        "<td> Lenguaje </td>"+
-        "<td>"+
-        dbTables[0][i][z][8]+
-        "</td>"+
-        "</tr>"+
-        "<tr>"+
-        "<td> Uso adicional </td>"+
-        "<td>"+
-        dbTables[0][i][z][9]+
-        "</td>"+
-        "</tr>"+
-        "</table>"+
-        "</div></div></div>"+
-        "<div class='row'>"+
-        "<div class='col-md-6'>"+
-        "</div></div></div></div></div>";
-        
-      }else{
-        modaldivtext += 
-        "<h4>" +
-        "DESCRIPCIÓN" +
-        "</h4>"+
-        "<p>" +
-        dbTables[0][i][z][4] +
-        "</p></div></div>"+
-        "<div class='row'>"+
-        "<div class='col-md-6'>"+
-        "</div></div></div></div></div>";
-      }
+      var text = ".anim"+z;
+      $(text).css(
+        "animation",
+        "typing 2s steps("+doc.Words+"), blink .5s step-end infinite alternate"
+      );
 
-      div.innerHTML += modaldivtext;
+      $(text).css(
+        "width",
+        ""+doc.Words+".2ch"
+      );
+      z++
+    });
+  });
+}
 
-      var img = document.createElement("IMG");
-      img.src = dbTables[0][i][z][0];
-      img.className = "img-responsive";
-      img.alt = "";
-      div.appendChild(img);
+function loadExperience(){
+  onExperience((querySnapshot) => {
+    experienceContent[0][0].innerHTML = "";
+    experienceContent[1][0].innerHTML = "";
 
+    var experience_data=[];
+    var k=0;
+    querySnapshot.forEach((doc) =>{
+      var experience = doc.data();
+      experience.Priority = Math.floor(experience.Priority);
+      experience_data[k] = experience;
+      k++;
+    });
+
+    experience_data.sort(function (a, b){
+      return (a.Priority - b.Priority)
+    });
+
+    experience_data.sort();
+
+    for(let i = 0; i < experience_data.length/3; i++){
+      experienceContent[0][0].innerHTML += i==0 ?  "<li data-target='#experience-movement' data-slide-to='"+i+"' class='active'></li>" : 
+      "<li data-target='#experience-movement' data-slide-to='"+i+"'></li>";
+    }
+
+   for (let i = 0; i < experience_data.length/3; i++) {   
+      var div = document.createElement("DIV");
+      div.className = i==0? "item active" : "item";
+      experienceContent[1][0].appendChild(div); 
       var div2 = document.createElement("DIV");
-      div2.className = "portfolio-caption";
+      div2.className = "container-experience";
       div.appendChild(div2);
-
-      var h4 = document.createElement("H4");
-      h4.innerHTML = dbTables[0][i][z][1];
-      div2.appendChild(h4);
-
-      var p = document.createElement("P");
-      p.innerHTML = dbTables[0][i][z][2];
-      div2.appendChild(p);
-      
-      var text;
-
-      if(dbTables[0][i][z][5] == "#") {
-        text = "<a href='#' data-toggle='modal' data-target='#" +
-                dbTables[0][i][z][3] +
-                "'><i class='fa fa-magic'></i></a>";
-                
-      div2.innerHTML += text;
+      for(let z = i*3; (z < (i*3)+3) && z<experience_data.length ; z++){
+        
+          div2.innerHTML += 
+          "<div id='experience-left'>"+
+          "<div class='card'>"+
+          "<img src='"+experience_data[z].Source+"' class='card-img'>"+
+          "<div class='container-card'>"+
+          "<h4><b>"+experience_data[z].Company+"</b></h4>"+
+          "<h5><b>"+experience_data[z].Position+"</b></h5>"+
+          "<p>"+experience_data[z].Paragraph+"</p>"+
+          "<p>"+experience_data[z].Duration+"</p>"+
+          "</div></div></div>";
+        }
       }
+  });
+}
+
+function loadFormacion(){
+  onFormacion((querySnapshot) => {
+    formacionContent[0][0].innerHTML = "";
+    formacionContent[1][0].innerHTML = "";
+
+    var formacion_data=[];
+    var k=0;
+    querySnapshot.forEach((doc) =>{
+      var formacion = doc.data();
+      formacion.Priority = Math.floor(formacion.Priority);
+      formacion_data[k] = formacion;
+      k++;
+    });
+
+    formacion_data.sort(function (a, b){
+      return (a.Priority - b.Priority)
+    });
+
+    formacion_data.sort();
+
+    for(let i = 0; i < formacion_data.length/2; i++){
+      formacionContent[0][0].innerHTML += i==0 ?  "<li data-target='#formacion-movement' data-slide-to='"+i+"' class='active'></li>" : 
+      "<li data-target='#formacion-movement' data-slide-to='"+i+"'></li>";
+    }
+
+   for (let i = 0; i < formacion_data.length/2; i++) {   
+      var div = document.createElement("DIV");
+      div.className = i==0? "item active" : "item";
+      formacionContent[1][0].appendChild(div); 
+      var div2 = document.createElement("DIV");
+      div2.className = "container-experience";
+      div.appendChild(div2);
+      for(let z = i*2; (z < (i*2)+2) && z<formacion_data.length ; z++){
+        
+          div2.innerHTML += 
+          "<div id='formacion-left'>"+
+          "<div class='card'>"+
+          "<img src='"+formacion_data[z].Source+"' class='card-img'>"+
+          "<div class='container-card'>"+
+          "<h4><b>"+formacion_data[z].College+"</b></h4>"+
+          "<h5><b>"+formacion_data[z].Info+"</b></h5>"+
+          "<p>"+formacion_data[z].Title+"</p>"+
+          "<p>"+formacion_data[z].Duration+"</p>"+
+          "<a class='btn btn-primary btn-xl text-uppercase rounded-button' target='_blank' href='"+formacion_data.Link+"'><i class='fa fa-plus'></i></a>"+
+          "</div></div></div>";
+        }
+      }
+  });
+}
+
+function loadAboutme(){
+  onAboutme((querySnapshot) => {
+    var aboutme_data;
+    querySnapshot.forEach((doc) =>{
+      aboutme_data = doc.data();
+    });
+    
+    aboutmeContent.innerHTML = "";
+
+    var isFound = true;
+    var text = "";
+    var text2 ="";
+    for(let i=1; isFound; ){
+      if(aboutme_data.Aptitude.indexOf("-", i) != -1){
+        text += "<p>"+aboutme_data.Aptitude.substring(i-1, aboutme_data.Aptitude.indexOf("-", i))+"</p>";
+        i = aboutme_data.Aptitude.indexOf("-", i) +1;
+      }else{
+        isFound = false;
+      }
+    }
+
+    isFound = true;
+    for(let i=1; isFound; ){
+      if(aboutme_data.Interest.indexOf("-", i) != -1){
+        text2 += "<p>"+aboutme_data.Interest.substring(i-1, aboutme_data.Interest.indexOf("-", i))+"</p>";
+        i = aboutme_data.Interest.indexOf("-", i) +1;
+      }else{
+        isFound = false;
+      }
+    }
+    
+      aboutmeContent.innerHTML += 
+      "<div id='img-about-me'>"+
+      "<img src='"+aboutme_data.Image+"' alt=''>"+
+      "</div>"+
+      "<div id='description'>"+
+      "<div class='section-title text-center'>"+
+      "<h3>Sobre mí</h3>"+
+      "</div>"+
+      "<p>"+
+      aboutme_data.Paragraph+
+      "</p>"+
+      "<p>"+
+      aboutme_data.Paragraph2+
+      "</p>"+
+      "<p>"+
+      aboutme_data.Paragraph3+
+      "</p>"+
+      "<div class='doble_seccion'>"+
+      "<div class='doble_seccion1'>"+
+      "<div class='section-title text-center'>"+
+      "<h5><b>Aptitudes</b></h5>"+
+      "</div>"+
+      text+
+      "</div>"+
+      "<div class='doble_seccion2'>"+
+      "<div class='section-title text-center'>"+
+      "<h5><b>Datos de interés</b></h5>"+
+      "</div>"+
+      text2+
+      "</div></div>";
+  });
+}
+
+function loadTabs() {
+  onPortfolio((querySnapshot) => {
+    var portfolio_data = [[],[]];
+    querySnapshot.forEach((doc) =>{
+      var portfolio = doc.data();
+
+      portfolio.ID = Math.floor(portfolio.ID);
+      portfolio.Priority = Math.floor(portfolio.Priority);
+
+      if(portfolio.Tab == "Portfolio"){
+        portfolio_data[0][portfolio_data[0].length] = portfolio;
+      }else{
+        portfolio_data[1][portfolio_data[1].length] = portfolio;
+      }
+    });
+    
+    contents[0].innerHTML = "";
+    contents[1].innerHTML = "";
+
+    portfolio_data[0].sort(function (a, b) {
+      if (a.Priority == b.Priority) return (a.ID < b.ID) ? -1 : (a.ID > b.ID) ? 1 : 0;
       else {
-        text = "<a href='#' data-toggle='modal' data-target='#" +
-                dbTables[0][i][z][3] +
-                "' class='link-1'><i class='fa fa-magic'></i></a>";
-                
-      div2.innerHTML += text;
-
-      var a2 = document.createElement("A");
-      a2.href = dbTables[0][i][z][5];
-      a2.className = "link-2";
-      a2.target = "_blank";
-      div2.appendChild(a2);
-
-      var i2 = document.createElement("I");
-      i2.className = "fa fa-link";
-      a2.appendChild(i2);
+       return (a.Priority < b.Priority) ? -1 : 1;
       }
+    });
+    portfolio_data[1].sort(function (a, b) {
+      if (a.Priority == b.Priority) return (a.ID < b.ID) ? -1 : (a.ID > b.ID) ? 1 : 0;
+      else {
+       return (a.Priority < b.Priority) ? -1 : 1;
+      }
+    });
+
+    portfolio_data[0].sort();
+    portfolio_data[1].sort();
+
+    for (let i = 0; i < contents.length; i++) {
+      var ul = document.createElement("UL");
+      ul.className = "portfolio-list";
+      contents[i].appendChild(ul);
+      for (let z = 0; z < portfolio_data[i].length; z++) {
+        var filter_list = [];
+        filter_list = portfolio_data[i][z].Additional.split(', ');
+        filter_list[filter_list.length] = portfolio_data[i][z].Language == "C++"? "Cpp" : portfolio_data[i][z].Language == "C#"? "Csharp" : portfolio_data[i][z].Language;
+        filter_list[filter_list.length] = portfolio_data[i][z].Platform_Filter;
+
+        var filter_text = "";
+        for (let m = 0; m < filter_list.length; m++) {
+          filter_text += " filter-"+filter_list[m];
+        }
+
+        var li = document.createElement("LI");
+        li.className = "portfolio-li"+filter_text;
+        ul.appendChild(li);
+  
+        var div = document.createElement("DIV");
+        div.className = "portfolio-item";
+        li.appendChild(div);
+  
+        var imgContent = portfolio_data[i][z].Type == "img"?  "<img src='"+portfolio_data[i][z].ModalSource+"' class='img_modal' alt=''>" : "<video autoplay muted loop id='VideoPlayer'><source src='"+portfolio_data[i][z].ModalSource+"' type='video/"+portfolio_data[i][z].Type+"'></video>"
+  
+        var modaldivtext = "<div class='section-modal modal fade' id=" +
+        portfolio_data[i][z].Modal +
+        " tabindex='-1' role='dialog' aria-hidden='true'>"+
+        "<div class='modal-content'>"+
+        "<div class='close-modal' data-dismiss='modal'>"+
+        "<div class='lr'>"+
+        "<div class='rl'>"+
+        "</div></div></div>"+
+        "<div class='container'>"+
+        "<div class='row justify-content-center'>"+
+        "<div class='section-title text-center'>"+
+        "<h3>" +
+        portfolio_data[i][z].Title +
+        "</h3>"+
+        imgContent;
+  
+        if(i==0){
+          modaldivtext+= 
+          "<div class='modal_description'>"+
+          "<h4>" +
+          "DESCRIPCIÓN" +
+          "</h4>"+
+          "<p>" +
+          portfolio_data[i][z].Description +
+          "</p>"+
+          "</div>"+
+          "<div class='modal_table'>"+
+          "<h3>"+
+          "Ficha técnica"+
+          "</h3>"+
+          "<ul>"+
+          "<li>"+
+          "<b>Puesto: </b>"+
+          portfolio_data[i][z].Position+
+          "</li>"+
+          "<li>"+
+          "<b>Plataforma: </b>"+
+          portfolio_data[i][z].Platform+
+          "</li>"+
+          "<li>"+
+          "<b>Lenguaje: </b>"+
+          portfolio_data[i][z].Language+
+          "</li>"+
+          "<li>"+
+          "<b>Uso adicional: </b>"+
+          portfolio_data[i][z].Additional+
+          "</li>"+
+          "</ul>"+
+          "</div></div></div>"+
+          "<div class='row'>"+
+          "<div class='col-md-6'>"+
+          "</div></div></div></div></div>";
+          
+        }else{
+          modaldivtext += 
+          "<h4>" +
+          "DESCRIPCIÓN" +
+          "</h4>"+
+          "<p>" +
+          portfolio_data[i][z].Description +
+          "</p></div></div>"+
+          "<div class='row'>"+
+          "<div class='col-md-6'>"+
+          "</div></div></div></div></div>";
+        }
+  
+        div.innerHTML += modaldivtext;
+        
+        var img = document.createElement("IMG");
+        img.src = portfolio_data[i][z].Source;
+        img.className = "img-responsive";
+        img.alt = "";
+        div.appendChild(img);
+  
+        var div2 = document.createElement("DIV");
+        div2.className = "portfolio-caption";
+        div.appendChild(div2);
+  
+        var h4 = document.createElement("H4");
+        h4.innerHTML = portfolio_data[i][z].Title;
+        div2.appendChild(h4);
+  
+        var p = document.createElement("P");
+        p.innerHTML = portfolio_data[i][z].Info;
+        div2.appendChild(p);
+        
+        var text;
+  
+        if(portfolio_data[i][z].Link == "#") {
+          text = "<a href='#' data-toggle='modal' data-target='#" +
+          portfolio_data[i][z].Modal +
+                  "'><i class='fa fa-magic'></i></a>";
+                  
+        div2.innerHTML += text;
+        }
+        else {
+          text = "<a href='#' data-toggle='modal' data-target='#" +
+          portfolio_data[i][z].Modal +
+                  "' class='link-1'><i class='fa fa-magic'></i></a>";
+                  
+        div2.innerHTML += text;
+  
+        var a2 = document.createElement("A");
+        a2.href = portfolio_data[i][z].Link;
+        a2.className = "link-2";
+        a2.target = "_blank";
+        div2.appendChild(a2);
+  
+        var i2 = document.createElement("I");
+        i2.className = "fa fa-link";
+        a2.appendChild(i2);
+        }
+      }
+    }
+    
+    setTimeout(() => {
+      tab_filter();
+    }, 2000);
+  });
+}
+
+const select = (el, all = false) => {
+  el = el.trim()
+  if (all) {
+    return [...document.querySelectorAll(el)]
+  } else {
+    return document.querySelector(el)
+  }
+}
+
+const on = (type, el, listener, all = false) => {
+  let selectEl = select(el, all)
+  if (selectEl) {
+    if (all) {
+      selectEl.forEach(e => {
+        e.onclick = listener;
+      })
+    } else {
+      selectEl.onclick = listener;
     }
   }
 }
 
-function changeTab(i) {
-  for (let z = 0; z < contents.length; z++) {
-    if(contents[z]) contents[z].style.display = "none";
-    if (z == i) contents[z].style.display = "block";
+window.addEventListener('load', () => {
+  AOS.init({
+    duration: 1000,
+    easing: 'ease-in-out',
+    once: true,
+    mirror: false
+  })
+});
+
+function tab_filter(){
+  let portfolioContainer = select('.portfolio-list', true);
+  if (portfolioContainer.length > 0) {
+    let portfolioFilters = []; 
+    for(let i = 0; i < portfolioContainer.length; i++){
+      let portfolioIsotope = new Isotope(portfolioContainer[i], {
+        itemSelector: '.portfolio-li'
+      });
+  
+       portfolioFilters[i] = select('#filter-'+i+' #portfolio-flters li', true);
+  
+      on('click', '#filter-'+i+' #portfolio-flters li', function(e) {
+        if(e){
+          e.preventDefault();
+        }
+
+        portfolioFilters[i].forEach(function(el) {
+          el.classList.remove('filter-active');
+        });
+        
+        this.classList.add('filter-active');
+
+        var this_element = this;
+
+        for(let k = 0; k < portfolioFilters.length; k++){
+          if(i != k) {
+            portfolioFilters[k].forEach(function(el) {
+              el.classList.remove('filter-active');
+              if(this_element.innerHTML == el.innerHTML) el.classList.add('filter-active');
+            });
+          }
+        }
+  
+        portfolioIsotope.arrange({
+          filter: this.getAttribute('data-filter')
+        });
+        portfolioIsotope.on('arrangeComplete', function() {
+          AOS.refresh()
+        });
+      }, true);
+    }
   }
-
-  console.log(contents);
 }
-
-changeTab(0);
