@@ -11,10 +11,12 @@ window.addEventListener("load", async () => {
     loadFormacion();
     loadAboutme();
     loadTabs();
-    //Se puede abrir un modal directamente añadiendo a la página /?modal=[NOMBRE DEL MODAL] ej. /?modal=MementumVRModal
-    if (getQueryVariable("modal")) {
-      $("#"+getQueryVariable("modal")).modal("show");
-    }
+    setTimeout(() => {
+      //Se puede abrir un modal directamente añadiendo a la página /?modal=[NOMBRE DEL MODAL] ej. /?modal=MementumVRModal
+      if (getQueryVariable("modal")) {
+        $("#"+getQueryVariable("modal")).modal("show");
+      }
+    }, 2000);
   }
 });
 
@@ -484,7 +486,7 @@ function loadTabs() {
         }
       }
     }
-    
+
     setTimeout(() => {
       tab_filter();
     }, 2000);
