@@ -5,6 +5,7 @@ var ini = false;
 window.addEventListener("load", async () => {
   if (!ini) {
     ini = true;
+    loadLogo();
     loadCarousel();
     loadExperience();
     loadFormacion();
@@ -82,6 +83,15 @@ $(".tabs").on("click", "a", function (e) {
     width: activeWidth + "px",
   });
 });
+
+function loadLogo(){
+  onCarousel((querySnapshot) => {
+    querySnapshot.forEach((doc) =>{
+      var icono = doc.data();
+      document.getElementsByTagName("head")[0].innerHTML += "<link rel='icon' href='"+icono.Icon+"'>";
+    });
+  });
+}
 
 function loadCarousel(){
   onCarousel((querySnapshot) => {

@@ -23,3 +23,4 @@ export const onCarousel = (callback) => onSnapshot(collection(db, 'Carousel'), c
 export const onExperience = (callback) => onSnapshot(collection(db, 'Experience'), callback);
 export const onFormacion = (callback) => onSnapshot(collection(db, 'Formacion'), callback);
 export const onPortfolio = (callback) => onSnapshot(collection(db, 'Portfolio'), callback);
+export const onIcono = (callback) => onSnapshot(collection(db, 'Icono'), callback);
