@@ -1,4 +1,4 @@
-import { onCarousel, onExperience, onFormacion, onAboutme, onPortfolio } from "./db.js";
+import { onCarousel, onExperience, onFormacion, onAboutme, onPortfolio, onIcono } from "./db.js";
 
 var ini = false;
 
@@ -85,7 +85,7 @@ $(".tabs").on("click", "a", function (e) {
 });
 
 function loadLogo(){
-  onCarousel((querySnapshot) => {
+  onIcono((querySnapshot) => {
     querySnapshot.forEach((doc) =>{
       var icono = doc.data();
       document.getElementsByTagName("head")[0].innerHTML += "<link rel='icon' href='"+icono.Icon+"'>";
