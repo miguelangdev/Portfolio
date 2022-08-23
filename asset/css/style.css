@@ -255,6 +255,27 @@ li {
   font-size: 12px;
 }
 
+#navbar-texto{
+  position: relative;
+  top: 5px;
+}
+
+#CV-nav{
+  position: relative;
+  left: 0; 
+  right: 0; 
+  top: 20px;
+  margin-left: auto; 
+  margin-right: auto;
+  font-size: 20px; 
+  width: 27px;
+}
+
+#socials{
+  position: relative;
+  top: -15px;
+}
+
 .navbar-game .navbar-nav > .active > a {
   border-radius: 0;
   color: #fff;
@@ -267,7 +288,7 @@ li {
 @media (min-width: 768px) {
   .navbar-default {
     background: solid;
-    padding: 5px 0;
+    padding: 0px 0;
     border: 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
@@ -291,7 +312,7 @@ li {
   }
 
   .navbar-default.navbar-shrink {
-    padding: 5px 0;
+    padding: 0px 0;
     background-color: #222222;
   }
 
@@ -2092,6 +2113,55 @@ color: white;
 text-align: center;
 }
 
+#CV-section{
+  display: none;
+}
+
+#container-CV{
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+#container-CV p{
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+#container-CV a{
+  font-size: 20px;
+  color: white;
+  border-radius: 12px;
+  background-color: rgb(255, 191, 0);
+  border: 2px solid rgba(190, 145, 8, 0.7);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  padding: 12px;
+  transition-duration: 0.4s;
+}
+
+#container-CV a:hover{
+  background-color: white;
+  color: rgb(255, 191, 0);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,1), 0 6px 20px 0 rgba(0,0,0,0.19);
+  cursor: pointer;
+}
+
+#container-CV ul{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+#container-CV li{
+  float: left;
+  padding-left: 10px;
+  padding-right: 50px; 
+}
+#estado-cv{
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
 .card {
   position: relative;
   top: 10%;
@@ -2224,7 +2294,15 @@ text-align: center;
   color: rgb(255, 191, 0);
 }
 
-@media (min-width: 350px) and (max-width: 450px) {
+@media (min-width: 350px) and (max-width: 450px) {  
+  #CV-nav{
+    display: none;
+  }
+  
+  #socials{
+    display: none;
+  }
+
   .navbar .tittle {
     font-size: 21px;
     font-weight: bold;

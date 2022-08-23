@@ -1,10 +1,12 @@
-import { onCarousel, onExperience, onFormacion, onAboutme, onPortfolio, onIcono } from "./db.js";
+import { onCarousel, onExperience, onFormacion, onAboutme, onPortfolio, onIcono, onCV, downloadSpanish, downloadEnglish } from "./db.js";
 
 var ini = false;
+var isCVOpen = false;
 
 window.addEventListener("load", async () => {
   if (!ini) {
     ini = true;
+    loadCV();
     loadLogo();
     loadCarousel();
     loadExperience();
@@ -68,6 +70,7 @@ var formacionContent =
   document.getElementById("formacion").getElementsByClassName("carousel-inner")
 ];
 var aboutmeContent = document.getElementById("container-about-me");
+var CVContent = document.getElementById("open-to-work");
 
 $(".selector").css({
   left: activeItem.position.left + "px",
@@ -85,6 +88,61 @@ $(".tabs").on("click", "a", function (e) {
     width: activeWidth + "px",
   });
 });
+
+function loadCV(){
+  document.getElementById("CV-button").addEventListener("click", showCV);
+  document.getElementById("notCV").addEventListener("click", notCV);
+  document.getElementById("notCV2").addEventListener("click", notCV);
+  document.getElementById("notCV3").addEventListener("click", notCV);
+  document.getElementById("notCV4").addEventListener("click", notCV);
+  document.getElementById("notCV5").addEventListener("click", notCV);
+
+  document.getElementById("button-spanish").addEventListener("click", downloadSpanish);
+  document.getElementById("button-english").addEventListener("click", downloadEnglish);
+
+  onCV((querySnapshot) => {
+    var cv_data;
+    querySnapshot.forEach((doc) =>{
+      cv_data = doc.data();
+    });
+
+    CVContent.innerHTML = cv_data.Estado;
+
+    if(cv_data.Estado == "En búsqueda de trabajo"){
+      CVContent.style.color = "lime";
+    }else{
+      CVContent.style.color = "red";
+    }
+
+    //var btspanish = document.getElementById("button-spanish");
+    //var btenglish = document.getElementById("button-english");
+
+    //btspanish.href = cv_data.Spanish;
+    //btenglish.href = cv_data.English;
+  });
+}
+
+function showCV(){
+  if(!isCVOpen){
+  document.getElementById("carousel-section").style.display = "none";
+  document.getElementById("experience").style.display = "none";
+  document.getElementById("formacion").style.display = "none";
+  document.getElementById("portfolio").style.display = "none";
+  document.getElementById("CV-section").style.display = "block";
+  isCVOpen = true;
+  }
+}
+
+function notCV(){
+  if(isCVOpen){
+    document.getElementById("carousel-section").style.display = "block";
+    document.getElementById("experience").style.display = "block";
+    document.getElementById("formacion").style.display = "block";
+    document.getElementById("portfolio").style.display = "block";
+    document.getElementById("CV-section").style.display = "none";
+    isCVOpen = false;
+    }
+}
 
 function loadLogo(){
   onIcono((querySnapshot) => {

@@ -47,6 +47,7 @@
         <p class="tittle">MIGUEL ÁNGEL GONZÁLEZ ÁLVAREZ</p>
         <div id="navegacion">
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div id="navbar-texto">
                 <ul class="nav navbar-nav navbar-left">
                     <li>
                         <h3 id="navbar-tittle"><b>MIGUEL ÁNGEL GONZÁLEZ ÁLVAREZ</b></h3>
@@ -55,6 +56,12 @@
                         <h3 id="navbar-puesto"><b>PROGRAMMER</b></h3>
                     </li>
                 </ul>
+                </div>
+                <div id = "CV-nav">
+                    <li><a id="CV-button" href="#CV-section"><b>CV</b></a></li>
+                </div>
+
+                <div id = "socials">
                 <div id= "div-social">
                     <ul class="nav navbar-nav navbar-left">
                     <li>
@@ -72,15 +79,17 @@
                     </ul>
                 </div>
                 </div>
+
                 <div id = "navbar-buttons">
                     <ul class="nav navbar-nav">
-                    <li class="active"><a href="#carousel-section"><b>INICIO</b></a></li>
-                    <li><a href="#experience"><b>EXPERIENCIA</b></a></li>
-                    <li><a href="#formacion"><b>FORMACIÓN</b></a></li>
-                    <li><a href="#about-me"><b>SOBRE MÍ</b></a></li>
-                    <li><a href="#portfolio"><b>PORTFOLIO</b></a></li>
+                    <li class="active"><a id="notCV" href="#carousel-section"><b>INICIO</b></a></li>
+                    <li><a id="notCV2" href="#experience"><b>EXPERIENCIA</b></a></li>
+                    <li><a id="notCV3" href="#formacion"><b>FORMACIÓN</b></a></li>
+                    <li><a id="notCV4" href="#about-me"><b>SOBRE MÍ</b></a></li>
+                    <li><a id="notCV5" href="#portfolio"><b>PORTFOLIO</b></a></li>
                   </ul>
                 </div>
+            </div>
             </div>
             
         </div>
@@ -167,6 +176,27 @@
         <!--  About Body -->
         <section id= "about-me">
             <div id= "container-about-me">
+            </div>
+        </section>
+
+        <!--  CV Body -->
+        <section id= "CV-section">
+            <div id= "container-CV">
+                <div id="estado-cv">ESTADO: <b id="open-to-work">EN BUSCA DE TRABAJO</b></div>
+                <ul>
+                    <li>
+                        <div id="cv-spanish">
+                            <p>CV EN ESPAÑOL</p>
+                            <a id="button-spanish"><i class="fa fa-download"></i> DESCARGAR</a>
+                        </div>
+                    </li>
+                    <li>
+                    <div id="cv-english">
+                        <p>CV IN ENGLISH</p>
+                        <a id="button-english"><i class="fa fa-download"></i> DOWNLOAD</a>
+                    </div>
+                </li>
+                </ul>
             </div>
         </section>
 
